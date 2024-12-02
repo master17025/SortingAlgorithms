@@ -28,7 +28,6 @@ void MergeSortAnalasis(std::vector<int> randomList, int lowerBound, int upperBou
     // Set the indices for the Merge Sort algorithm (left and right)
     int left = 0;
     int right = randomList.size() - 1;
-    printArray(randomList);
     // Start the timer to measure execution time
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -37,7 +36,6 @@ void MergeSortAnalasis(std::vector<int> randomList, int lowerBound, int upperBou
 
     // Stop the timer after sorting is complete
     auto end = std::chrono::high_resolution_clock::now();
-    printArray(randomList);
     // Calculate the time duration in milliseconds
     std::chrono::duration<double, std::milli> duration = end - start;
 
@@ -55,7 +53,6 @@ void MergeSortAnalasis(std::vector<int> randomList, int lowerBound, int upperBou
 void CountingSortAnalysis(std::vector<int> randomList, int lowerBound, int upperBound)
 {
 
-    printArray(randomList);
     // Start the timer to measure execution time
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -64,7 +61,6 @@ void CountingSortAnalysis(std::vector<int> randomList, int lowerBound, int upper
 
     // Stop the timer after sorting is complete
     auto end = std::chrono::high_resolution_clock::now();
-    printArray(randomList);
     // Calculate the time duration in milliseconds
     std::chrono::duration<double, std::milli> duration = end - start;
 
@@ -77,7 +73,6 @@ void CountingSortAnalysis(std::vector<int> randomList, int lowerBound, int upper
 void RadixSortAnalysis(std::vector<int> randomList, int lowerBound, int upperBound)
 {
 
-    printArray(randomList);
     // Start the timer to measure execution time
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -86,7 +81,6 @@ void RadixSortAnalysis(std::vector<int> randomList, int lowerBound, int upperBou
 
     // Stop the timer after sorting is complete
     auto end = std::chrono::high_resolution_clock::now();
-    printArray(randomList);
     // Calculate the time duration in milliseconds
     std::chrono::duration<double, std::milli> duration = end - start;
 
